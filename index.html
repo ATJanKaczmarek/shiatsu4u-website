@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>shiatsu4u - Daniela Bärthlein</title>
+  </head>
+  <body>
+    <section id="hero">
+      <img class="landscape" src="assets/landscape.png" alt="" />
+      <ul>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#shiatsu">Shiatsu</a></li>
+        <li><a href="#tierkommunikation">Tierkommunikation</a></li>
+        <li><a href="#prices">Preise</a></li>
+        <li><a href="#opening-hours">Öffnungszeiten </a></li>
+        <li><a href="#location">Anfahrt</a></li>
+      </ul>
+      <img class="logo" src="assets/logo_full_1c.svg" alt="" />
+    </section>
+    <section id="about">
+      <div class="half">
+        <h1>Hi!</h1>
+        <h2>Ich bin Dani.</h2>
+        <p>
+          Ich therapiere dich oder dein Tier, in Form einer traditionellen
+          Shiatsu-Massage. Neben meiner Ausbildung in der Kinesiologie, habe ich
+          eine Schulung zur Shiatsupraktikerin in der Schweiz absolviert. Ich
+          begleite dich auf dem Weg der Selbstfindung. In meiner privaten
+          Shiatsu-Praxis am Rande von Nürnberg.
+        </p>
+      </div>
+      <div class="half">
+        <img class="portrait" src="assets/pose.png" alt="" />
+        <div class="background-circle"></div>
+      </div>
+    </section>
+    <section id="shiatsu">
+      <h1>Shi | at | su, das</h1>
+      <div class="row">
+        <p>
+          Shiatsu ist eine japanische Massagetechnik, die auf Akupressur basiert
+          und durch sanfte Berührungen und Druck auf bestimmte Punkte des
+          Körpers Energieblockaden lösen soll. Die Massage wird mit den Händen,
+          Fingern, Ellenbogen oder Füßen durchgeführt und kann auch auf der
+          Kleidung stattfinden. Shiatsu wird häufig zur Linderung von Schmerzen,
+          Stress und zur Verbesserung der Durchblutung eingesetzt. Es gibt auch
+          spezielle Techniken für Schwangere und Kinder.
+        </p>
+        <img src="https://placehold.co/387x214" alt="" />
+      </div>
+      <div class="row">
+        <img src="https://placehold.co/387x214" alt="" />
+        <p>
+          Im Shiatsu geht es darum das Qi, die Lebensenergie aus der
+          Traditionellen Chinesischen Medizin (TCM), wieder ins Gleichgewicht zu
+          bringen. Dies geschieht durch Stimulation der Meridiane
+          (Energielaufbahnen des Körpers), denen jeweils ein Element der
+          TCM-Lehre zugewiesen wird. Diese sind Holz, Feuer, Erde, Metall und
+          Wasser.
+        </p>
+      </div>
+    </section>
+    <section id="tierkommunikation">
+      <h1>Tierkommunikation</h1>
+      <p>
+        In der Tierkommunikation geht es, ähnlich wie im Shiatsu, darum das Tier
+        zu fragen was nicht stimmt. Dies geschieht in Form von Druckpunkten,
+        Distanzexperimenten und Verhaltensanalyse. Denn oft sind Tiere, die
+        ungewöhnliche Verhaltensweisen zeigen, durch Knoten in der Beziehung zu
+        Herrchen/Frauchen gestört. Die Tierkommunikation ist darauf bedacht,
+        Probleme ausfindig zu machen und diese zu lösen.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua.
+      </p>
+      <div class="background-circle">
+        <img src="assets/dog.png" alt="" />
+      </div>
+    </section>
+    <section id="prices">
+      <h1>Preise</h1>
+      <span>Schritt 1: Behandlung wählen</span>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="direction">Behandlungsrichtung</label>
+          <select name="direction" id="direction">
+            <option value="shaitsu">Shiatsu</option>
+            <option value="tierkommunikation">Tierkommunikation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="type">Behandlungsart</label>
+          <select name="type" id="type">
+            <option value="shaitsu">Shiatsu</option>
+            <option value="tierkommunikation">Tierkommunikation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Behandlungsdauer</label>
+          <div class="row">
+            <input
+              class="active"
+              type="button"
+              id="sixty_minutes"
+              name="sixty_minutes"
+              value="60 Min"
+            />
+            <input
+              type="button"
+              id="thirty_minutes"
+              name="thirty_minutes"
+              value="30 Min"
+            />
+          </div>
+        </div>
+      </div>
+      <span>Schritt 2: Wunschtermin bestimmen</span>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Wunschdatum</label>
+          <input class="active" name="date" type="date" />
+        </div>
+        <div class="form-group">
+          <label for="time">Wunschuhrzeit</label>
+          <input class="active" name="time" type="time" />
+        </div>
+      </div>
+      <span>Schritt 3: Daten angeben</span>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            class="active"
+            name="name"
+            type="text"
+            placeholder="Max Mustermann"
+          />
+        </div>
+        <div class="form-group">
+          <label for="mail">E-Mail</label>
+          <input
+            class="active"
+            name="mail"
+            type="email"
+            placeholder="max.muster@mustermail.de"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="opening-hours">
+      <h1>Behandlungszeiten</h1>
+      <div class="time-container">
+        <div class="weekdays">
+          <ul>
+            <li>Montag - Donnerstag</li>
+            <li>Freitag</li>
+            <li>Samstag</li>
+          </ul>
+        </div>
+        <div class="times">
+          <ul>
+            <li>10:00 Uhr - 20:00 Uhr</li>
+            <li>nach Bedarf</li>
+            <li>09:00 Uhr - 14:00 Uhr</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <img src="assets/landscape.png" alt="" /> -->
+    </section>
+    <section id="location">
+      <h1>Anfahrt</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.2848045933933!2d11.156682076604678!3d49.4602330714201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f59d9ca75523f%3A0x328973d91bd7dade!2sShiatsu-4u%20Daniela%20B%C3%A4rthlein!5e0!3m2!1sde!2sde!4v1685629382215!5m2!1sde!2sde"
+        width="1200"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <footer>
+      <h3 class="header">Kontakt</h3>
+      <div class="address">
+        <p>Daniela Bärthlein</p>
+        <p>Kasperackerweg 27</p>
+        <p>90482 Nürnberg</p>
+      </div>
+      <div class="contact-options">
+        <p>Tel.: +49 / 911 54843609</p>
+        <p>E-Mail: daniela@shiatsu-4u.de</p>
+      </div>
+      <h3 class="header last">Rechtliches</h3>
+      <div class="legal">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutzerklärung</a>
+      </div>
+    </footer>
+  </body>
+</html>
