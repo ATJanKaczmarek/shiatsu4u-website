@@ -1,13 +1,4 @@
-@font-face {
-  font-family: "Domaine Display Narrow Semibold";
-  src: url("./fonts/Domaine Display Narrow/DomaineDispNar-Semibold.otf");
-  weight: 600;
-}
-@font-face {
-  font-family: "Domaine Display Narrow";
-  src: url("./fonts/Domaine Display Narrow/DomaineDispNar-Regular.otf");
-  weight: 400;
-}
+@import url("https://fonts.cdnfonts.com/css/domaine-display-narrow");
 @font-face {
   font-family: "Equitan Sans Extra Light";
   src: url("./fonts/Equitan-Sans/EquitanSans-Thin.otf");
@@ -26,6 +17,9 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 html,
@@ -56,8 +50,12 @@ p {
 }
 
 h1 {
-  font-family: "Domaine Display Narrow Semibold";
+  color: #e9e9e9;
+  font-family: "Domaine Display Narrow", sans-serif;
   font-size: 11rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 h1 span {
   font-family: "Domaine Display Narrow Regular";
@@ -65,8 +63,13 @@ h1 span {
 }
 
 h2 {
-  font-family: "Equitan Sans Regular";
+  color: #e9e9e9;
+  font-family: EquitanSans-Regular;
   font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.52px;
 }
 
 section {
@@ -170,23 +173,33 @@ section {
   color: #e9e9e9;
 }
 #about .half h2 {
-  margin: 0;
+  margin-bottom: 3.2rem;
   font-size: 5.2rem;
   line-height: 52px;
   color: #e9e9e9;
+}
+#about .half p {
+  margin-bottom: 3.2rem;
+  max-width: 60rem;
+}
+#about .half a {
+  color: #e9e9e9;
+  text-decoration: none;
+  font-family: EquitanSans-Regular;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.31px;
+}
+#about .half a svg {
+  margin-right: 1.6rem;
 }
 #about .half:has(.portrait) {
   align-items: center;
 }
 #about .half:has(.portrait) .portrait {
-  position: absolute;
-  width: 20vw;
-}
-#about .half:has(.portrait) .background-circle {
-  aspect-ratio: 1;
-  width: 30vw;
-  background: #8bab54;
-  border-radius: 999999px;
+  filter: drop-shadow(0px 2px 71px rgba(49, 56, 38, 0.2));
 }
 
 #shiatsu {
