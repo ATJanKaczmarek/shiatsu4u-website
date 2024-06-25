@@ -32,6 +32,10 @@ $green-accent: #8bab54;
   weight: 600;
 }
 
+* {
+  padding: 0;
+}
+
 html,
 body,
 :root {
@@ -80,8 +84,8 @@ section {
 
 #hero {
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
 
   img.landscape {
     width: 100%;
@@ -89,29 +93,38 @@ section {
     object-fit: cover;
   }
 
-  ul {
+  nav {
+    background: green;
     display: flex;
-    justify-content: center;
-    list-style: none;
-    li {
-      margin: 40px 32px;
-      a {
-        font-family: "Equitan Sans Extra Light";
-        color: $white;
-        text-decoration: none;
-        opacity: 1;
-      }
-      a:hover {
-        opacity: 0.5;
-        transition: opacity 200ms;
+    padding: 65px 140px 0 95px;
+    // padding: 65px;
+    justify-content: space-between;
+
+    img.logo {
+      height: fit-content;
+      display: inline-block;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      background: red;
+      list-style: none;
+
+      li {
+        margin-right: 30px;
+        a {
+          font-family: "Equitan Sans Extra Light";
+          color: $white;
+          text-decoration: none;
+          opacity: 1;
+        }
+        a:hover {
+          opacity: 0.5;
+          transition: opacity 200ms;
+        }
       }
     }
-  }
-
-  img.logo {
-    position: relative;
-    left: -4rem;
-    width: 50%;
   }
 }
 

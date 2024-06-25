@@ -23,6 +23,10 @@
   src: url("./fonts/Equitan-Sans/EquitanSans-SemiBold.otf");
   weight: 600;
 }
+* {
+  padding: 0;
+}
+
 html,
 body,
 :root {
@@ -70,37 +74,42 @@ section {
 
 #hero {
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 #hero img.landscape {
   width: 100%;
   height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-#hero ul {
+#hero nav {
+  background: green;
   display: flex;
-  justify-content: center;
+  padding: 65px 140px 0 95px;
+  justify-content: space-between;
+}
+#hero nav img.logo {
+  height: fit-content;
+  display: inline-block;
+}
+#hero nav ul {
+  display: flex;
+  flex-direction: row;
+  background: red;
   list-style: none;
 }
-#hero ul li {
-  margin: 40px 32px;
+#hero nav ul li {
+  margin-right: 30px;
 }
-#hero ul li a {
+#hero nav ul li a {
   font-family: "Equitan Sans Extra Light";
   color: #e9e9e9;
   text-decoration: none;
   opacity: 1;
 }
-#hero ul li a:hover {
+#hero nav ul li a:hover {
   opacity: 0.5;
   transition: opacity 200ms;
-}
-#hero img.logo {
-  position: relative;
-  left: -4rem;
-  width: 50%;
 }
 
 .half {
@@ -248,9 +257,7 @@ section {
   background: #8bab54;
 }
 #prices .form-row .form-group select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-image: url("assets/menu_list.png");
   background-repeat: no-repeat;
   background-position: 0;
@@ -292,8 +299,7 @@ section {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-  -webkit-clip-path: circle(54% at 50% 45%);
-          clip-path: circle(54% at 50% 45%);
+  clip-path: circle(54% at 50% 45%);
 }
 
 #opening-hours {
@@ -388,4 +394,6 @@ footer .header {
 }
 footer .last {
   grid-column: 4/5;
-}/*# sourceMappingURL=stylesheet.css.map */
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
