@@ -476,7 +476,7 @@ section {
 }
 #opening-hours .time-container {
   height: 70vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/landscape.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/hände_herzpose.png");
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -511,6 +511,7 @@ section {
 }
 
 #location {
+  margin-top: 10rem;
   padding: 0 12rem;
 }
 #location h1 {
@@ -519,12 +520,13 @@ section {
 }
 #location iframe {
   margin-bottom: 24.5rem;
+  width: 100%;
 }
 
 footer {
-  padding: 10rem 12rem;
+  padding: 10rem 12rem 3rem 12rem;
   display: grid;
-  grid-template: auto auto/1fr 1fr 1fr 1fr;
+  grid-template: auto auto auto/1fr 1fr 1fr 1fr;
   background: #8bab54;
 }
 footer h3 {
@@ -559,6 +561,37 @@ footer .header {
 }
 footer .last {
   grid-column: 4/5;
+}
+footer .attribution {
+  margin-top: 10rem;
+  display: flex;
+  grid-column: 1/5;
+  grid-row: 3/4;
+  align-items: center;
+  flex-direction: column;
+}
+footer .attribution span {
+  margin-top: 3.2rem;
+}
+footer .attribution a {
+  margin: 0 0.5ch;
+}
+footer .attribution hr {
+  width: 100%;
+  height: 2px;
+  background: #e9e9e9;
+  border: none;
+  outline: none;
+}
+footer .attribution span,
+footer .attribution a {
+  color: #e9e9e9;
+  font-family: EquitanSans-SemiBold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
