@@ -87,14 +87,22 @@ section {
   flex-direction: column;
   width: 100%;
 
-  img.landscape {
+  img.background {
     width: 100%;
-    height: 60vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+  }
+
+  img.landscape {
+    height: 100vh;
     object-fit: cover;
   }
 
   nav {
-    background: green;
     display: flex;
     padding: 65px 140px 0 95px;
     // padding: 65px;
@@ -108,7 +116,6 @@ section {
     ul {
       display: flex;
       flex-direction: row;
-      background: red;
       list-style: none;
 
       li {

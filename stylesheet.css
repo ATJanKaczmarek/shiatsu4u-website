@@ -77,13 +77,19 @@ section {
   flex-direction: column;
   width: 100%;
 }
-#hero img.landscape {
+#hero img.background {
   width: 100%;
-  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+#hero img.landscape {
+  height: 100vh;
   object-fit: cover;
 }
 #hero nav {
-  background: green;
   display: flex;
   padding: 65px 140px 0 95px;
   justify-content: space-between;
@@ -95,7 +101,6 @@ section {
 #hero nav ul {
   display: flex;
   flex-direction: row;
-  background: red;
   list-style: none;
 }
 #hero nav ul li {
