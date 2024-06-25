@@ -280,6 +280,56 @@ section {
       margin-right: 11.8rem;
     }
   }
+
+  .three-cols {
+    display: flex;
+    align-items: center;
+
+    min-height: 100vh;
+    margin-top: 10rem;
+    width: 100%;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      height: 90vh;
+      h3 {
+        margin-top: 3.2rem;
+        color: $white;
+        font-family: "Domaine Display Narrow";
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        height: 2lh;
+        margin-bottom: 3.2rem;
+      }
+      p {
+        flex: 1;
+        color: $white;
+        font-family: EquitanSans-Regular;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px; /* 120.833% */
+        letter-spacing: 0.24px;
+      }
+
+      img {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    .col:nth-child(2) {
+      margin: 0 1.6rem;
+      padding: 0 1.6rem;
+      border-left: 2px solid $white;
+      border-right: 2px solid $white;
+    }
+  }
 }
 
 #prices {
