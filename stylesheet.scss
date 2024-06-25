@@ -763,3 +763,156 @@ footer {
     }
   }
 }
+
+// Werdegang (Subpage)
+header {
+  min-height: 100vh;
+  padding: 0 12rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  nav {
+    flex: 8;
+    margin-top: 6.4rem;
+
+    a {
+      svg {
+        margin-right: 1.6rem;
+      }
+
+      color: $white;
+      text-decoration: none;
+
+      font-family: EquitanSans-Regular;
+      font-size: 31px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.31px;
+    }
+  }
+
+  .content {
+    margin-bottom: 6.4rem;
+    flex: 5;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 6.4rem;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      p {
+        max-width: 650px;
+      }
+    }
+  }
+}
+
+main {
+  padding: 0 12rem;
+
+  h2 {
+    color: $white;
+    font-family: EquitanSans-Regular;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.52px;
+  }
+}
+
+.progress {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  // padding-left: 80px;
+
+  .circle {
+    margin-bottom: 6.4rem;
+    .label {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 32px;
+      margin-top: 3px;
+      color: #b5b5ba;
+      font-size: 17px;
+    }
+
+    .title {
+      padding-left: 55px;
+      display: block;
+      width: calc(100vw - 130px);
+      margin-top: -32px;
+      text-align: left;
+
+      color: #e9e9e9;
+      font-family: "Domaine Display Narrow";
+      font-size: 39px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.39px;
+    }
+  }
+
+  .circle,
+  .bar {
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #d5d5da;
+    vertical-align: top;
+  }
+
+  .bar {
+    z-index: -75;
+    position: absolute;
+    width: 6px;
+    height: calc(100% - 20px);
+    margin-left: 16px;
+    border-radius: 0;
+    top: 0;
+    vertical-align: top;
+    left: 0;
+  }
+}
+
+// /* Done / Active */
+
+// .progress .bar.done,
+// .progress .circle.done {
+//   background: #eee;
+// }
+// .progress .bar.active {
+//   background: linear-gradient(to right, #eee 40%, #fff 60%);
+// }
+// .progress .circle.done .label {
+//   color: #fff;
+//   background: #8bc435;
+//   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+// }
+// .progress .circle.done .title {
+//   color: #444;
+// }
+// .progress .circle.active .label {
+//   color: #fff;
+//   background: #0c95be;
+//   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+// }
+// .progress .circle.active .title {
+//   color: #0c95be;
+// }
