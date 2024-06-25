@@ -274,13 +274,53 @@ section {
   border-right: 2px solid #e9e9e9;
 }
 
-#prices h1 {
+#kinesiologie {
+  display: flex;
+  padding: 0 10.6rem 0 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#kinesiologie h1 {
+  margin-bottom: 8.1rem;
+  font-size: 11rem;
+  line-height: 110px;
+  color: #e9e9e9;
+}
+#kinesiologie .col {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-right: 6rem;
+}
+#kinesiologie .col h2 {
+  margin-bottom: 0.8rem;
+}
+#kinesiologie .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#kinesiologie .row img {
+  box-shadow: 0px 2px 71px rgba(49, 56, 38, 0.2);
+  flex: 2;
+}
+#kinesiologie .row :first-child:is(p) {
+  margin-right: 13.5rem;
+  margin-bottom: 5rem;
+}
+#kinesiologie .row :first-child:is(img) {
+  margin-right: 11.8rem;
+}
+
+#preise h1 {
   margin: 15rem 0 7rem 12rem;
   font-size: 11rem;
   line-height: 110px;
   color: #e9e9e9;
 }
-#prices span {
+#preise span {
   font-family: "Domaine Display Narrow";
   font-size: 3.9rem;
   letter-spacing: 0.01em;
@@ -288,7 +328,7 @@ section {
   align-items: center;
   color: #e9e9e9;
 }
-#prices span::before {
+#preise span::before {
   content: "";
   display: inline-flex;
   width: 96px;
@@ -296,7 +336,7 @@ section {
   margin-right: 2.4rem;
   background-color: #e9e9e9;
 }
-#prices span::after {
+#preise span::after {
   content: "";
   display: inline-flex;
   flex: 1;
@@ -304,19 +344,19 @@ section {
   margin-left: 2.4rem;
   background-color: #e9e9e9;
 }
-#prices .form-row {
+#preise .form-row {
   width: 100%;
   padding: 0 12rem;
   display: flex;
   flex-direction: row;
 }
-#prices .form-row .form-group {
+#preise .form-row .form-group {
   display: flex;
   flex-direction: column;
   margin-top: 3.2rem;
   margin-bottom: 7rem;
 }
-#prices .form-row .form-group label {
+#preise .form-row .form-group label {
   color: #e9e9e9;
   font-family: "EquitanSans-Regular";
   font-style: normal;
@@ -325,8 +365,8 @@ section {
   line-height: 26px;
   margin-bottom: 0.8rem;
 }
-#prices .form-row .form-group select,
-#prices .form-row .form-group input {
+#preise .form-row .form-group select,
+#preise .form-row .form-group input {
   padding: 1.2rem 2.4rem 1.2rem 2.4rem;
   border: none;
   border-radius: 8px;
@@ -338,17 +378,17 @@ section {
   font-feature-settings: "pnum" on, "lnum" on;
   margin-right: 2rem;
 }
-#prices .form-row .form-group input:not(.active) {
+#preise .form-row .form-group input:not(.active) {
   color: #8bab54;
   border: 2px solid #8bab54;
   background: none;
 }
-#prices .form-row .form-group select,
-#prices .form-row .form-group input.active {
+#preise .form-row .form-group select,
+#preise .form-row .form-group input.active {
   color: #e9e9e9;
   background: #8bab54;
 }
-#prices .form-row .form-group select {
+#preise .form-row .form-group select {
   appearance: none;
   background-image: url("assets/menu_list.png");
   background-repeat: no-repeat;
@@ -356,7 +396,7 @@ section {
   background-position-x: calc(100% - 2.4rem);
   background-size: 16px;
 }
-#prices .form-row .form-group.row {
+#preise .form-row .form-group.row {
   flex-direction: row;
 }
 
