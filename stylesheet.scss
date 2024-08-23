@@ -210,14 +210,16 @@ section {
       font-size: 11rem;
       line-height: 110px;
       color: $white;
+      margin-bottom: 3.2rem;
     }
 
-    h2 {
-      margin-bottom: 3.2rem;
-      font-size: 5.2rem;
-      line-height: 52px;
-      color: $white;
-    }
+    // @deprecated
+    // h2 {
+    //   margin-bottom: 3.2rem;
+    //   font-size: 5.2rem;
+    //   line-height: 52px;
+    //   color: $white;
+    // }
 
     p {
       margin-bottom: 3.2rem;
