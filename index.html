@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <title>shiatsu4u - Daniela Bärthlein</title>
   </head>
   <body>
@@ -89,7 +96,36 @@
       </div>
       <div class="row">
         <!-- TODO: Dieses Bild hat links einen Fuß -> dieser sollte wegretuschiert werden -->
-        <img src="assets/Shi2.jpg" alt="" />
+        <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/Sa.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sb.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sc.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sd.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Se.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sf.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sg.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/Sh.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
         <p style="margin-top: 4rem">
           Shiatsu ist ein Weg zu einer gelassenen, aktiven und gesunden
           Lebensgestaltung. Ich stelle keine Diagnosen. Sie können sich bequem
@@ -321,5 +357,15 @@
         </span>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-carousel", {
+          type: "loop",
+          gap: "1rem",
+          snap: true,
+          autoplay: "on",
+        }).mount();
+      });
+    </script>
   </body>
 </html>

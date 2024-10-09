@@ -304,6 +304,19 @@ section img {
     :first-child:is(img) {
       margin-right: 11.8rem;
     }
+
+    #image-carousel {
+      margin-right: 11.8rem;
+      max-width: 40%;
+
+      .splide__slide {
+        img {
+          width: 100%;
+          max-height: 31rem;
+          object-fit: cover;
+        }
+      }
+    }
   }
 
   .three-cols {

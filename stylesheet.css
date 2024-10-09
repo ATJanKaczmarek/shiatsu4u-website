@@ -242,6 +242,15 @@ section img {
 #shiatsu .row :first-child:is(img) {
   margin-right: 11.8rem;
 }
+#shiatsu .row #image-carousel {
+  margin-right: 11.8rem;
+  max-width: 40%;
+}
+#shiatsu .row #image-carousel .splide__slide img {
+  width: 100%;
+  max-height: 31rem;
+  object-fit: cover;
+}
 #shiatsu .three-cols {
   display: flex;
   align-items: center;
